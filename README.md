@@ -1,16 +1,19 @@
-# React + Vite
+**React Developer Task**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Task: Build a Mini "Task Tracker"
 
-Currently, two official plugins are available:
+Requirements:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Display a list of tasks (title, due date, status).
 
-## React Compiler
+2. Allow adding/editing/deleting tasks (modal or inline edit).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Tasks should persist (mock API).
 
-## Expanding the ESLint configuration
+4. Filter tasks by status (All, Pending, Done).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Use React Hooks, not class components.
+
+6. Styling with plain CSS or Tailwind (no UI library like MUI).
+
+P.S. write thoughtful component design, Add debounce search, Add a simple sorting feature (by date or name)
