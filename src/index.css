@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.font {
+  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  
+}
