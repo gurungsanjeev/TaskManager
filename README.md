@@ -1,19 +1,21 @@
-**React Developer Task**
+# Mini Task Tracker
 
-Task: Build a Mini "Task Tracker"
+A lightweight **Task Tracker** built with **React** and **Tailwind CSS**.  
+This app allows users to manage tasks efficiently with features like **add, edit, delete**, **filter by status**, **search with debounce**, and **sorting**.
 
-Requirements:
+---
 
-1. Display a list of tasks (title, due date, status).
+## 🔹 Features
 
-2. Allow adding/editing/deleting tasks (modal or inline edit).
+- Display a list of tasks with **title**, **due date**, and **status**.
+- Add new tasks via a form.
+- Edit and delete existing tasks (Edit via modal).
+- Tasks persist using a **mock API** .
+- **Filter tasks** by status: All, Pending, Completed.
+- **Search tasks** with debounce to reduce unnecessary renders.
+- **Sort tasks** by **date** or **title**.
+- Responsive layout using **Tailwind CSS**.
+- Built entirely with **React Hooks**.
 
-3. Tasks should persist (mock API).
 
-4. Filter tasks by status (All, Pending, Done).
 
-5. Use React Hooks, not class components.
-
-6. Styling with plain CSS or Tailwind (no UI library like MUI).
-
-P.S. write thoughtful component design, Add debounce search, Add a simple sorting feature (by date or name)
