@@ -67,6 +67,8 @@ function App() {
     fetchData();
   };
 
+ 
+
   const filteredTasks = taskData
     .filter((task) =>
       task.title.toLowerCase().includes(debouncedSearch.toLowerCase())
@@ -129,7 +131,14 @@ function App() {
         <EditModal
           task={selectedTask}
           onClose={() => setIsEditOpen(false)}
-          onUpdate={fetchData}
+          onUpdate={async (updatedTask) => {
+            await axios.put(
+              `https://694e7bb0b5bc648a93c08122.mockapi.io/api/data/task/${updatedTask.id}`,
+              updatedTask
+            );
+            fetchData();
+            setIsEditOpen(false);
+          }}
         />
       )}
     </>
