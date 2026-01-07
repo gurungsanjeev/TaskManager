@@ -1,6 +1,12 @@
 import React from 'react'
 
 const TaskForm = ({ formData, handleChange, addTask }) => {
+
+
+const date = new Date().toISOString().split("T")[0]
+
+console.log(date);
+
   return (
     <div className="taskForm mt-10 flex gap-3 justify-center">
       <input
@@ -14,6 +20,7 @@ const TaskForm = ({ formData, handleChange, addTask }) => {
 
       <input
         type="date"
+        min={date}
         id="date"
         value={formData.date}
         onChange={handleChange}
